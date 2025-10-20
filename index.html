@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Shinzo Suzuki - Full Stack Developer | Portfólio de Desenvolvimento e
+      Serviços Digitais
+    </title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-blue": "#1a73e8", // Azul de tecnologia (Inovação, Confiança)
+              "secondary-cyan": "#00bfa5", // Ciano/Verde (Solução, Crescimento)
+              "dark-bg": "#1f2937", // Cinza escuro / fundo empresarial
+              "light-text": "#f3f4f6", // Texto claro
+            },
+          },
+        },
+      };
+    </script>
+
+    <script src="js/script.js"></script>
+  </head>
+  <body class="bg-dark-bg text-light-text antialiased">
+    <header
+      class="sticky top-0 z-50 bg-dark-bg/95 backdrop-blur-sm border-b border-gray-700 bg-pattern"
+    >
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="flex items-center space-x-2">
+          <svg
+            class="w-8 h-8 text-secondary-cyan"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+            ></path>
+          </svg>
+          <span class="text-xl font-bold tracking-tight text-light-text"
+            >Shinzo Suzuki - FULL STACK DEVELOPER</span
+          >
+        </a>
+
+        <nav class="hidden md:flex space-x-8 text-sm font-medium">
+          <a
+            href="#servicos"
+            class="hover:text-primary-blue transition duration-300"
+            >Serviços</a
+          >
+          <a
+            href="#planos"
+            class="hover:text-primary-blue transition duration-300"
+            >Planos e Preços</a
+          >
+          <a
+            href="#entrega"
+            class="hover:text-primary-blue transition duration-300"
+            >Entrega e Prazos</a
+          >
+          <a
+            href="#contato"
+            class="py-2 px-4 bg-primary-blue rounded-lg hover:bg-secondary-cyan transition duration-300"
+            >Consultoria</a
+          >
+        </nav>
+
+        <button
+          id="menu-toggle"
+          class="md:hidden text-light-text p-2 focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <nav
+        id="mobile-menu"
+        class="hidden md:hidden bg-gray-800 border-t border-gray-700 py-2"
+      >
+        <a href="#servicos" class="block px-4 py-2 hover:bg-gray-700"
+          >Serviços</a
+        >
+        <a href="#planos" class="block px-4 py-2 hover:bg-gray-700"
+          >Planos e Preços</a
+        >
+        <a href="#entrega" class="block px-4 py-2 hover:bg-gray-700"
+          >Entrega e Prazos</a
+        >
+        <a
+          href="#contato"
+          class="block px-4 py-2 hover:bg-gray-700 bg-primary-blue mt-2 mx-2 rounded-lg text-center"
+          >Consultoria</a
+        >
+      </nav>
+    </header>
+
+    <main class="pt-10">
+      <section
+        id="hero"
+        class="container mx-auto px-4 text-center py-20 md:py-32"
+      >
+        <img
+          src="img/ShinzoSuzuki.jpg"
+          alt="Shinzo Suzuki - Full Stack Developer"
+          class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 shadow-lg border-4 border-secondary-cyan"
+        />
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+          Seu Próximo Nível Digital Começa Aqui
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-8">
+          Desenvolvimento robusto, design funcional (UI/UX) e a performance que
+          seus usuários esperam. Especialistas em **React Native**, E-commerce e
+          WordPress.
+        </p>
+        <a
+          href="#planos"
+          class="inline-block bg-secondary-cyan text-dark-bg font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-primary-blue hover:text-light-text transition duration-300 transform hover:scale-105"
+        >
+          Ver Planos e Preços
+        </a>
+      </section>
+
+      <section
+        id="servicos"
+        class="py-16 md:py-24 bg-gray-800 border-t border-b border-gray-700"
+      >
+        <div class="container mx-auto px-4">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-12 text-secondary-cyan"
+          >
+            Nossa Gama de Serviços
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="p-6 bg-dark-bg rounded-xl shadow-2xl border-t-4 border-primary-blue"
+            >
+              <svg
+                class="w-10 h-10 text-primary-blue mb-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.75 17L13 7l-4.5 4-2.5 7zM18 13l-4 4 4 4M6 13l4 4-4 4"
+                ></path>
+              </svg>
+              <h3 class="text-xl font-semibold mb-2">
+                Desenvolvimento Web & Landing Pages
+              </h3>
+              <p class="text-gray-400 text-sm">
+                Criação de sites institucionais, Landing Pages de alta
+                conversão, Portfólios e Currículos Digitais.
+              </p>
+            </div>
+
+            <div
+              class="p-6 bg-dark-bg rounded-xl shadow-2xl border-t-4 border-primary-blue"
+            >
+              <svg
+                class="w-10 h-10 text-primary-blue mb-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.2 4M12 20c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM18 20c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+                ></path>
+              </svg>
+              <h3 class="text-xl font-semibold mb-2">
+                E-commerce e Soluções de Venda
+              </h3>
+              <p class="text-gray-400 text-sm">
+                Lojas virtuais robustas com integração de pagamento, estoque e
+                otimização para vendas.
+              </p>
+            </div>
+
+            <div
+              class="p-6 bg-dark-bg rounded-xl shadow-2xl border-t-4 border-primary-blue"
+            >
+              <svg
+                class="w-10 h-10 text-primary-blue mb-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2zM16 8l-4 4-4-4"
+                ></path>
+              </svg>
+              <h3 class="text-xl font-semibold mb-2">
+                Aplicativos Mobile e Banco de Dados
+              </h3>
+              <p class="text-gray-400 text-sm">
+                Desenvolvimento de Apps (React Native) e otimização/criação de
+                Bancos de Dados (PostgreSQL/MongoDB).
+              </p>
+            </div>
+
+            <div
+              class="p-6 bg-dark-bg rounded-xl shadow-2xl border-t-4 border-primary-blue"
+            >
+              <svg
+                class="w-10 h-10 text-primary-blue mb-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m-7 13L9 15m4 0l-2-2-2 2M15 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h8a2 2 0 002-2v-2"
+                ></path>
+              </svg>
+              <h3 class="text-xl font-semibold mb-2">
+                Manutenção e WordPress Premium
+              </h3>
+              <p class="text-gray-400 text-sm">
+                Manutenção preventiva/corretiva, otimização de performance e
+                customização avançada de WordPress.
+              </p>
+            </div>
+
+            <div
+              class="p-6 bg-dark-bg rounded-xl shadow-2xl border-t-4 border-primary-blue"
+            >
+              <svg
+                class="w-10 h-10 text-primary-blue mb-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v2M7 12H5a2 2 0 00-2 2v4a2 2 0 002 2h2m4-14h.01M10 8h.01M7 8h.01"
+                ></path>
+              </svg>
+              <h3 class="text-xl font-semibold mb-2">
+                Blogs, Links e Formulários
+              </h3>
+              <p class="text-gray-400 text-sm">
+                Desenvolvimento de blogs funcionais e criação de formulários de
+                cadastro e links/redirecionamentos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="planos" class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-16 text-secondary-cyan"
+          >
+            Planos de Investimento
+          </h2>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="price-card p-8 bg-gray-700 rounded-xl shadow-xl">
+              <h3 class="text-3xl font-bold mb-2 text-primary-blue">
+                Básico
+                <span class="text-sm font-normal text-gray-400"
+                  >(Presença Rápida)</span
+                >
+              </h3>
+              <p class="text-5xl font-extrabold my-4">
+                R$ 800<span class="text-lg font-normal"> - R$ 1.500</span>
+              </p>
+              <ul class="text-sm space-y-3 mb-6 border-t pt-4 border-gray-600">
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">✓</span> **Landing
+                  Page** (1 Página Otimizada)
+                </li>
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">✓</span> Formulário de
+                  Contato Simples
+                </li>
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">✓</span> Design
+                  Responsivo (Mobile-First)
+                </li>
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">✓</span> Otimização
+                  Básica de Performance
+                </li>
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">✓</span> 1 Mês de
+                  Suporte Básico
+                </li>
+                <li class="flex items-center text-gray-400">
+                  <span class="text-red-500 mr-2">✗</span> Blog ou Banco de
+                  Dados
+                </li>
+                <li class="flex items-center text-gray-400">
+                  <span class="text-red-500 mr-2">✗</span> E-commerce ou App
+                  Mobile
+                </li>
+              </ul>
+              <a
+                href="#contato"
+                class="block text-center bg-primary-blue text-light-text font-bold py-3 rounded-lg hover:bg-secondary-cyan transition duration-300"
+                >Quero este plano</a
+              >
+            </div>
+
+            <div
+              class="price-card price-card-pro p-8 bg-gray-900 rounded-xl shadow-2xl relative"
+            >
+              <div
+                class="absolute top-0 right-0 bg-secondary-cyan text-dark-bg text-xs font-bold px-3 py-1 rounded-bl-lg"
+              >
+                MAIS POPULAR
+              </div>
+              <h3 class="text-3xl font-bold mb-2 text-secondary-cyan">
+                Profissional
+                <span class="text-sm font-normal text-gray-400"
+                  >(Alto Desempenho e Plataformas)</span
+                >
+              </h3>
+              <p class="text-5xl font-extrabold my-4">
+                R$ 7.000<span class="text-lg font-normal"> +</span>
+              </p>
+              <ul class="text-sm space-y-3 mb-6 border-t pt-4 border-gray-600">
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">⭐</span>
+                  **E-commerce** ou **App Mobile** (Complexo)
+                </li>
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">⭐</span>
+                  Desenvolvimento de Tema/Plugin WordPress Customizado
+                </li>
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">⭐</span> Banco de
+                  Dados Escalável (SQL/NoSQL)
+                </li>
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">⭐</span> Blog Completo
+                  com Recursos Premium e SEO
+                </li>
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">⭐</span> Otimização
+                  Máxima (CDN, Core Web Vitals)
+                </li>
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">⭐</span> 6 Meses de
+                  Suporte Premium e Manutenção Essencial
+                </li>
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">⭐</span> Consultoria
+                  UI/UX Completa
+                </li>
+              </ul>
+              <a
+                href="#contato"
+                class="block text-center bg-secondary-cyan text-dark-bg font-bold py-3 rounded-lg hover:bg-primary-blue transition duration-300"
+                >Consultoria Premium</a
+              >
+            </div>
+
+            <div class="price-card p-8 bg-gray-700 rounded-xl shadow-xl">
+              <h3 class="text-3xl font-bold mb-2 text-primary-blue">
+                Avançado
+                <span class="text-sm font-normal text-gray-400"
+                  >(Presença Dinâmica)</span
+                >
+              </h3>
+              <p class="text-5xl font-extrabold my-4">
+                R$ 2.500<span class="text-lg font-normal"> - R$ 6.000</span>
+              </p>
+              <ul class="text-sm space-y-3 mb-6 border-t pt-4 border-gray-600">
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">✓</span> Site
+                  Institucional (Até 5 Páginas)
+                </li>
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">✓</span> Formulário de
+                  Cadastro de Clientes (DB Simples)
+                </li>
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">✓</span> Estrutura de
+                  Blog Otimizada
+                </li>
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">✓</span> Loja Virtual
+                  Simples (Catálogo/Até 50 produtos)
+                </li>
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">✓</span> Otimização
+                  Avançada (Core Web Vitals)
+                </li>
+                <li class="flex items-center">
+                  <span class="text-secondary-cyan mr-2">✓</span> 3 Meses de
+                  Suporte e Pequenas Alterações
+                </li>
+                <li class="flex items-center text-gray-400">
+                  <span class="text-yellow-500 mr-2">≈</span> App Mobile
+                  (Orçamento à parte)
+                </li>
+              </ul>
+              <a
+                href="#contato"
+                class="block text-center bg-primary-blue text-light-text font-bold py-3 rounded-lg hover:bg-secondary-cyan transition duration-300"
+                >Falar com Consultor</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="entrega"
+        class="py-16 md:py-24 bg-gray-800 border-t border-b border-gray-700"
+      >
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-8 text-secondary-cyan">
+            Compromisso com o Prazo e o Investimento
+          </h2>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-10 text-left max-w-4xl mx-auto"
+          >
+            <div
+              class="p-6 bg-dark-bg rounded-xl shadow-lg border-l-4 border-secondary-cyan"
+            >
+              <h3 class="text-2xl font-semibold mb-3 text-primary-blue">
+                ⏱ Prazo de Entrega Estimado
+              </h3>
+              <p class="text-gray-300 mb-4">
+                O prazo é definido com base na complexidade e nos requisitos,
+                garantindo um desenvolvimento sem pressa, mas com foco em
+                agilidade.
+              </p>
+              <ul class="space-y-2 text-gray-400">
+                <li>**Plano Básico:** 7 - 15 dias úteis</li>
+                <li>**Plano Avançado:** 20 - 45 dias úteis</li>
+                <li>
+                  **Plano Profissional:** 45 - 90+ dias úteis (Ajustado após
+                  escopo de App/E-commerce)
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="p-6 bg-dark-bg rounded-xl shadow-lg border-l-4 border-secondary-cyan"
+            >
+              <h3 class="text-2xl font-semibold mb-3 text-primary-blue">
+                💵 Valor de Entrada e Condições
+              </h3>
+              <p class="text-gray-300 mb-4">
+                Para iniciarmos o projeto e alocarmos os recursos necessários
+                (domínio, hospedagem, licenças):
+              </p>
+              <div class="text-center bg-gray-700 p-4 rounded-lg mb-4">
+                <p class="text-3xl font-bold text-secondary-cyan">50%</p>
+                <p class="text-gray-300">
+                  do valor do plano para Início Imediato.
+                </p>
+              </div>
+              <p class="text-sm text-gray-400">
+                Os 50% restantes são pagos na entrega final e aprovação do
+                projeto, antes da publicação.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-secondary-cyan">
+            Pronto para Começar?
+          </h2>
+          <p class="text-xl text-gray-400 mb-10 max-w-xl mx-auto">
+            Entre em contato hoje para uma **consultoria gratuita**! Vamos
+            analisar suas necessidades e definir a melhor estratégia digital.
+          </p>
+
+          <div
+            class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8"
+          >
+            <a
+              href="mailto:[Seu Email Profissional]"
+              class="flex items-center justify-center bg-primary-blue text-light-text font-bold py-3 px-6 rounded-lg text-lg hover:bg-secondary-cyan transition duration-300"
+            >
+              <svg
+                class="w-6 h-6 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.84 5.23L21 8"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8V6a2 2 0 012-2h14a2 2 0 012 2v2"
+                ></path>
+              </svg>
+              contatodevdragon@gmail.com
+            </a>
+
+            <a
+              href="https://wa.me/5582988886434?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20DevDragon"
+              target="_blank"
+              class="flex items-center justify-center bg-secondary-cyan text-dark-bg font-bold py-3 px-6 rounded-lg text-lg hover:bg-primary-blue hover:text-light-text transition duration-300"
+            >
+              <svg
+                class="w-6 h-6 mr-2"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12c0 5.5 4.5 10 10 10s10-4.5 10-10C22 6.5 17.5 2 12 2zm3.6 14.9c-.3.4-.7.6-1.1.6h-.1c-.4 0-.8-.1-1.2-.4l-2.4-1.4c-.6-.4-1-.9-1.3-1.6l-1.3-3.4c-.1-.3-.1-.6-.1-.9 0-.2 0-.4.1-.6.2-.4.5-.6.8-.7h1.4c.3 0 .6 0 .8.2.2.1.4.3.5.5l.6 1.5c.1.3 0 .6-.1.8-.1.2-.3.4-.5.5l-.8.5c-.2.1-.3.3-.4.5 0 .2.1.4.2.6.2.3.4.6.7.8.3.2.7.4 1.1.5l1.6.4c.3.1.5.1.8 0 .2-.1.4-.3.5-.5l1.5-2.6c.2-.3.4-.4.7-.4h.5c.4 0 .8.2 1 .5.3.3.4.7.4 1.1v.2c0 .4-.2.8-.5 1.1l-1.8 2.2c-.3.4-.7.6-1.1.6z"
+                />
+              </svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-900 py-8 border-t border-gray-700">
+      <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
+        <p>
+          © 2025 Shinzo Suzuki - DevDragon. Todos os direitos reservados. |
+          Desenvolvido com foco em UI/UX e Performance.
+        </p>
+        <div class="mt-4 space-x-4">
+          <a href="#" class="hover:text-primary-blue">Termos de Serviço</a>
+          <span class="text-gray-700">|</span>
+          <a href="#" class="hover:text-primary-blue"
+            >Política de Privacidade</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
